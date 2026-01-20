@@ -9,7 +9,7 @@ String getBaseUrl() {
   } else if (Platform.isWindows) {
     return 'https://cocory.shop'; //
   } else {
-    return 'http://localhost:8080';
+    return 'https://cocory.shop';
   }
 }
 final dio = Dio(
