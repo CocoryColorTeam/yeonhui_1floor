@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "969115589653",
+    "firebase_url": "https://cocory-1floor-kiosk-default-rtdb.firebaseio.com",
+    "project_id": "cocory-1floor-kiosk",
+    "storage_bucket": "cocory-1floor-kiosk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969115589653:android:4d08207010d71f9c18c21c",
+        "android_client_info": {
+          "package_name": "com.example.cocory_1floor_kiosk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCny4E18z3_YzQmDv5jRqYrKF0mh3dac6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
