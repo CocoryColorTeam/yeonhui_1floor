@@ -20,7 +20,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:sizer/sizer.dart';
-
+import 'package:flutter/foundation.dart';
 import 'common/painter/cloud_painter.dart';
 import 'component/change_now.dart';
 import 'component/change_showroom.dart';
@@ -28,11 +28,15 @@ import 'component/change_showroom.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  try {
-    await InternetAddress.lookup('google.com');
-    print('[✅ 네트워크 초기화 완료]');
-  } catch (e) {
-    print('[⚠️ 네트워크 초기화 실패] $e');
+  if (!kIsWeb) {
+    try {
+      await InternetAddress.lookup('google.com');
+      print('[✅ 네트워크 초기화 완료]');
+    } catch (e) {
+      print('[⚠️ 네트워크 초기화 실패] $e');
+    }
+  } else {
+    print('[ℹ️ Web 환경: 네트워크 체크 스킵]');
   }
 
   initDio();
