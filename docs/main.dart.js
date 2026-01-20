@@ -7726,7 +7726,7 @@ aH1(){var s="https://cocory.shop"
 if($.atN())return s
 else if($.atO())return"http://127.0.0.1:8080"
 else if($.atP())return s
-else return"http://localhost:8080"},
+else return s},
 aHc(){var s=$.amv().Mg$
 s.v(s,new A.FN(new A.aif(),new A.aig(),new A.aih(),null,null,null))},
 aif:function aif(){},
